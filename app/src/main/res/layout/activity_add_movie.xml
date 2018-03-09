@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nw.kcube.sqlitdbcrud.AddMovieActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/input_movie_name"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edittextbg"
+
+                android:hint="Enter Movie Name"
+                android:paddingLeft="8dp" />
+
+            <EditText
+                android:id="@+id/input_movie_type"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Enter Movie Type"
+                android:paddingLeft="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edittextbg"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_movie_date"
+                    android:layout_width="280dp"
+                    android:layout_height="54dp"
+                    android:paddingLeft="8dp" />
+
+                <ImageButton
+                    android:id="@+id/cal_btn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:src="@android:drawable/ic_menu_my_calendar" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/input_movie_cinema"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Enter Cinema Name"
+                android:paddingLeft="8dp" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Enter status"
+                android:paddingLeft="8dp" />
+
+            <com.nw.kcube.sqlitdbcrud.other.LineEditText
+                android:id="@+id/input_movie_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Enter Movie Review"
+                android:minLines="3"
+                android:paddingLeft="8dp" />
+
+            <Button
+                android:id="@+id/add_moview_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btnbg"
+                android:text="Add Movie" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
