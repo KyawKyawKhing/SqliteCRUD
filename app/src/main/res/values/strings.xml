@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">BitTest</string>
+    <string name="app_name">SQLite DB CRUD</string>
     <string name="action_settings">Settings</string>
 </resources>
