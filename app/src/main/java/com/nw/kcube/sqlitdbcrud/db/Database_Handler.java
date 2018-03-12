@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class Database_Handler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "bit_test";
+    private static final String DATABASE_NAME = "movie_test";
     SQLiteDatabase db = Database_Handler.this.getWritableDatabase();
 
     private static final String MOVIE_TABLE = "movies",
